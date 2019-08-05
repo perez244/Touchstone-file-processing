@@ -135,7 +135,7 @@ for k=1:m
     data=A.data;
 
 dataout(:,1)=data(:,1);
-freq = dataout(:,1);
+freq = dataout(:,1).*1e9;
 dataout(:,2)=data(:,1)*2*pi;
 w = data(:,1)*2*pi;
 dataout(:,3:10)=data(:,2:9);
